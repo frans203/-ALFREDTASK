@@ -1,0 +1,62 @@
+.todoCard {
+  width: 100%;
+  border: 1px solid #111;
+  border-radius: 1rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  flex-direction: column;
+  position: relative;
+}
+.todoCard__title {
+  font-size: 3rem;
+  color: #fff;
+}
+.todoCard__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todoCard__actions button,
+.hide,
+.todoCard__changeBtn {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 2rem;
+  background-color: #fff;
+  border: none;
+  margin: 2rem 1rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.todoCard__actions button:hover,
+.hide:hover {
+  background-color: #ccc;
+}
+.todoCard__input {
+  font-size: 1.5rem;
+}
+.todoCard__completed {
+  background-color: rgb(64, 138, 68);
+}
+.todoCard__completed .todoCard__title {
+  text-decoration: line-through;
+  text-decoration-color: #333;
+}
+.todoCard__compText {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.hiddenHeader {
+  color: #ccc;
+}
+.hide {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
